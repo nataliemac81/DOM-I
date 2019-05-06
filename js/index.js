@@ -61,11 +61,55 @@ const ctaImg = document.querySelector('#cta-img').setAttribute('src', siteConten
 
 // Main content
 
+// Top content
+const featHeading = document.querySelector('h4');
+featHeading.textContent = siteContent["main-content"]["features-h4"];
 
+const featContent = document.querySelector('p');
+featContent.textContent = siteContent["main-content"]["features-content"];
 
+const h4Elements = document.querySelectorAll('h4');
+const pElements = document.querySelectorAll('p');
 
+const aboutHeading = h4Elements[1];
+aboutHeading.textContent = siteContent["main-content"]["about-h4"];
 
+const aboutContent = pElements[1];
+aboutContent.textContent = siteContent["main-content"]["about-content"];
 
+// Middle image
+const midImg = document.querySelector('#middle-img').src = siteContent["main-content"]["middle-img-src"];
 
+// Bottom content
+const servicesHeading = h4Elements[2];
+servicesHeading.textContent = siteContent["main-content"]["services-h4"];
 
+const servicesContent = pElements[2];
+servicesContent.textContent = siteContent["main-content"]["services-content"];
 
+const productHeading = h4Elements[3];
+productHeading.textContent = siteContent["main-content"]["product-h4"];
+
+const productContent = pElements[3];
+productContent.textContent = siteContent["main-content"]["product-content"];
+
+const visionHeading = h4Elements[4];
+visionHeading.textContent = siteContent["main-content"]["vision-h4"];
+
+const visionContent = pElements[4];
+visionContent.textContent = siteContent["main-content"]["vision-content"];
+
+const contactHeading = h4Elements[5];
+contactHeading.textContent = siteContent["contact"]["contact-h4"];
+
+const contactAddress = pElements[5];
+contactAddress.textContent = siteContent["contact"]["address"];
+
+const contactPhone = pElements[6];
+contactPhone.textContent = siteContent["contact"]["phone"];
+
+const contactEmail = pElements[7];
+contactEmail.textContent = siteContent["contact"]["email"];
+
+const footer = pElements[8];
+footer.textContent = siteContent["footer"]["copyright"];
